@@ -1,0 +1,58 @@
+body {
+    margin: 40px;
+}
+
+h1 {
+    font-family: 'Gruppo', cursive;
+    font-size: 65;
+    text-shadow:
+     0 0 10px #FFFFFF,
+     0 0 20px #FFFFFF,
+     0 0 30px #FFFFFF,
+     0 0 40px rgb(55,255,55),
+     0 0 70px rgb(55,255,55),
+     0 0 80px rgb(55,255,55),
+     0 0 100px rgb(55,255,55)
+}
+
+h2 {
+    font-family: 'Englebert', sans-serif;
+}
+
+.welcome-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-image: url(img/start.jpeg);
+    background-position: bottom;
+}
+
+.botton {
+    cursor: pointer;
+    
+}
+
+.d-none {
+  display: none;
+}
+
+.quiz-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-image: url(img/summer.jpg);
+  background-position: center;
+}
+
+.pic {
+  display: flex;
+}
+
+  
