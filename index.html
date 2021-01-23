@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Das große Lofotenquiz</title>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Gruppo&family=Julius+Sans+One&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Englebert&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+
+    </head>
+    <body>
+        <div class="welcome-container" id="welcome">
+            <h1>Die Lofoten</h1>
+            <h2>Das ultimative Quiz
+                über den wunderschönen Norden Norwegens</h2>
+        
+            <botton onclick="startQuiz()" class="botton">Los geht's!</botton>
+        </div>
+
+        <div class="d-none" id="quiz-container">
+            <div class="card-body">
+                Erste Frage
+            </div>
+
+            <div class="mt-2">
+                <button class="btn btn-secondary">Antwort A</button>
+                <button class="btn btn-secondary">Antwort B</button>
+                <button class="btn btn-secondary">Antwort C</button>
+                <button class="btn btn-secondary">Antwort D</button>
+
+            </div>
+        </div>
+
+    </body>
+</html>
