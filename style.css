@@ -24,6 +24,7 @@ h2 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding-top: 50px;
     width: 100%;
     height: 100%;
     color: white;
@@ -33,22 +34,96 @@ h2 {
 
 .botton {
     cursor: pointer;
-    
+    font-family: 'Gruppo', cursive;
+    font-size: 25;
+    background-color: grey;
+    margin-top: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 50%; 
+}
+
+.botton:hover {
+    background-color: rgb(150,150,150);
+    transform: rotate(20deg);
+    transition: all 1s ease-out;
 }
 
 .d-none {
   display: none;
 }
 
-.quiz-container {
+.header {
+  display: flex;
+  height: 60px;
+  width: 100%;
+  background-color:  rgb(150,150,150);
+  margin-bottom: 100px;
+}
+
+.mt-2 {
+  display: flex;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.btn-secondary {
+  margin-left: 10px;
+}
+
+.answer-row {
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.answer-row button {
+  width: 300px;
+  height: 70px;
+  display: flex;
+  margin-top: 20px;
+  opacity: 0.9;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.progress {
+  height: 20px;
+  width: 50%;
+  overflow: unset;
+  margin-bottom: 20px;
+}
+
+.question {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: 'Englebert', sans-serif;
+  font-size: 30;
+  background-color: rgb(230,230,230);
+  border-radius: 20%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 40px;
+  box-shadow: 10px 5px 5px black;
+}
+
+.quiz-container {
+  display: flex;
+  align-items: center;
   flex-direction: column;
+  padding-bottom: 200px;
   width: 100%;
   height: 100%;
-  background-image: url(img/summer.jpg);
+  background-image: url(img/freedomsommer.jpg);
   background-position: center;
+  background-size: cover;
 }
 
 .pic {
