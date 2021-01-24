@@ -16,7 +16,7 @@
         <script src="script.js"></script>
 
     </head>
-    <body>
+    <body onload="nextQuestion()">
         <div class="welcome-container" id="welcome">
             <h1>Die Lofoten</h1>
             <h2>Das ultimative Quiz
@@ -26,16 +26,40 @@
         </div>
 
         <div class="d-none" id="quiz-container">
-            <div class="card-body">
+
+            <div class="header">
+                <h1>Die Lofoten- Das Quiz</h1>
+            </div>
+
+            <div class="progress">
+                <div id="progress-bar" class="progress-bar" role="progressbar" style="width: 25%;">25%</div>
+            </div>
+
+            <div class="question" id="question">
                 Erste Frage
             </div>
 
-            <div class="mt-2">
-                <button class="btn btn-secondary">Antwort A</button>
-                <button class="btn btn-secondary">Antwort B</button>
-                <button class="btn btn-secondary">Antwort C</button>
-                <button class="btn btn-secondary">Antwort D</button>
+            <div class="alert alert-success d-none" id="right-answer" role="alert">
+                Deine Antwort ist Richtig!
+              </div>
+              <div class="alert alert-danger d-none" id="wrong-answer" role="alert">
+                Deine Antwort ist Falsch!
+            </div>
 
+            <div class="mt-2">
+                <div class="answer-row">
+                    <button onclick="answer(1)" id="answer1" class="btn btn-secondary">Antwort A</button>
+                    <button onclick="answer(2)" id="answer2" class="btn btn-secondary">Antwort B</button>
+                </div>
+
+                <div class="answer-row">
+                <button onclick="answer(3)" id="answer3" class="btn btn-secondary">Antwort C</button>
+                <button onclick="answer(4)" id="answer4" class="btn btn-secondary">Antwort D</button>
+                </div>
+            </div>
+
+            <div class="mt-4">
+                <button id="next-btn" class="btn btn-light d-none" onclick="nextQuestion()">Nächste Frage</button>
             </div>
         </div>
 
