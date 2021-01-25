@@ -130,4 +130,159 @@ h2 {
   display: flex;
 }
 
-  
+.quiz-finish {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-image: url(img/end.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.fireworks {
+  display: flex;
+  width: 50%;
+  height: auto;
+  margin-top: 30px;
+}
+
+/* for a nicer view*/
+@media (max-width: 880px) {
+  .answer-row button {
+    width: 200px;
+  }
+
+  h2 {
+    font-size: 20;
+  }
+}
+
+@media (max-width: 769px) {
+  h1 {
+    font-size: 45;
+  }
+
+  .question {
+    margin-bottom: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size: 25;
+    text-align: center;
+  }
+}
+
+@media (max-width: 744px) {
+  .fireworks {
+    margin-top: 80px;
+  }
+}
+
+@media (max-width: 590px) {
+  body {
+    margin: 20px;
+  }
+}
+
+@media (max-width: 533px) {
+  h2 {
+    font-size: 18;
+  }
+
+  .answer-row {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  h1 {
+    font-size: 35;
+    padding-top: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .answer-row button {
+    width: 150px;
+  }
+
+  .question {
+    font-size: 20;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .answer-row button {
+    font-size: 14;
+  }
+}
+
+@media (max-width: 412px) {
+  h2 {
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 361px) {
+  h2 {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  h1 {
+    font-size: 30;
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+
+  body {
+    margin: 5px;
+  }
+
+  .answer-row {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .header {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 376px) {
+  body {
+    margin: 0;
+  }
+
+  h2 {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 321px) {
+  body {
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 28;
+  }
+
+  .answer-row button {
+    width: 120px;
+    font-size: 12;
+  }
+
+  .header {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 281px) {
+  h1 {
+    font-size: 25;
+  }
+}
