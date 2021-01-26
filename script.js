@@ -90,7 +90,29 @@ function finishQuiz() {
 /**
  * Loading next Question
  */
+let urls = [
+    'url(img/freedomsommer.jpg',
+    'url(img/icybubble.jpeg)',
+    'url(img/itsmagic.jpeg)',
+    'url(img/Rushybeach.jpeg)',
+    'url(img/summer.jpg)'
+];
 function loadQuestion() {
+    updateField('question', 'question');
+    updateField('answer1', 'answer_1');
+    updateField('answer2', 'answer_2');
+    updateField('answer3', 'answer_3');
+    updateField('answer4', 'answer_4');
+    right_answer = allQuestions[question_number - 1]['right_answer'];
+    let quizContainer = document.getElementById('quiz-container');
+    quizContainer.style.backgroundImage = urls[question_number - 1]; //Changing Backgroundimg
+}
+function updateField(id, key) {
+    document.getElementById(id).innerHTML = allQuestions[question_number - 1][key];
+}
+
+
+/*function loadQuestion() {
     document.getElementById('question').innerHTML = allQuestions[question_number -1]['question'];
         document.getElementById('answer1').innerHTML = allQuestions[question_number -1]['answer_1'];
         document.getElementById('answer2').innerHTML = allQuestions[question_number -1]['answer_2'];
@@ -111,12 +133,9 @@ function loadQuestion() {
         document.getElementById('quiz-container').style.backgroundImage = 'url(img/Rushybeach.jpeg)';
     }
     if(question_number == 5) {
-        document.getElementById('quiz-container').style.backgroundImage = 'url(img/Rushybeach.jpeg)';
-    } 
-    if(question_number == 5) {
         document.getElementById('quiz-container').style.backgroundImage = 'url(img/summer.jpg)';
     } 
-}
+}*/
 
 /**
  * Hiding Next-Botton
