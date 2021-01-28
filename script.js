@@ -21,7 +21,7 @@ let allQuestions = [{
 {
     'question': 'Warum ist die Durchschnittstemperatur im Winter nur -5°C?',
     'answer_1': 'Aufgrund der südlichen Lage',
-    'answer_2': 'Weil sich die Larme Luft in den vielen Fjorden staut',
+    'answer_2': 'Weil sich die warme Luft in den vielen Fjorden staut',
     'answer_3': 'Weil die Sonne dort eine hohe Strahlenkraft hat',
     'answer_4': 'Wegen dem Einfluss des Golfstroms',
     'right_answer': 4,
@@ -43,7 +43,7 @@ let allQuestions = [{
     'answer_3': 'Berge',
     'answer_4': 'Bäume',
     'right_answer': 4,
-    'background-image': 'url(img/Rushybeach.jpeg)'
+    'background-image': 'url(img/rushybeach.jpeg)'
 },
 {
     'question': 'Wie nennt man auf den Lofoten kleine Ortschaften?',
@@ -94,7 +94,7 @@ let urls = [
     'url(img/freedomsommer.jpg',
     'url(img/icybubble.jpeg)',
     'url(img/itsmagic.jpeg)',
-    'url(img/Rushybeach.jpeg)',
+    'url(img/rushybeach.jpeg)',
     'url(img/summer.jpg)'
 ];
 function loadQuestion() {
@@ -111,31 +111,6 @@ function updateField(id, key) {
     document.getElementById(id).innerHTML = allQuestions[question_number - 1][key];
 }
 
-
-/*function loadQuestion() {
-    document.getElementById('question').innerHTML = allQuestions[question_number -1]['question'];
-        document.getElementById('answer1').innerHTML = allQuestions[question_number -1]['answer_1'];
-        document.getElementById('answer2').innerHTML = allQuestions[question_number -1]['answer_2'];
-        document.getElementById('answer3').innerHTML = allQuestions[question_number -1]['answer_3'];
-        document.getElementById('answer4').innerHTML = allQuestions[question_number -1]['answer_4'];
-        right_answer = allQuestions[question_number -1]['right_answer'];
-    
-    if(question_number == 1) {
-        document.getElementById('quiz-container').style.backgroundImage = 'url(img/freedomsommer.jpg';
-    }
-    if(question_number == 2) {
-        document.getElementById('quiz-container').style.backgroundImage = 'url(img/icybubble.jpeg)';
-    }
-    if(question_number == 3) {
-        document.getElementById('quiz-container').style.backgroundImage = 'url(img/itsmagic.jpeg)';
-    }
-    if(question_number == 4) {
-        document.getElementById('quiz-container').style.backgroundImage = 'url(img/Rushybeach.jpeg)';
-    }
-    if(question_number == 5) {
-        document.getElementById('quiz-container').style.backgroundImage = 'url(img/summer.jpg)';
-    } 
-}*/
 
 /**
  * Hiding Next-Botton
